@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" ></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="./js/main.js"></script>
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .container{
+        margin: 100px auto;
+        max-width:700px;
+        box-shadow: 0px 1px 10px 1px rgb(0, 0, 0);
+       
+    }
+
+    .container ul {
+        list-style: none;
+        padding: 0px;
+        margin-left: 100px;
+        position: relative;
+    }
+    .container ul:before{
+        content: '';
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:0px;
+        border:1px dashed rgb(224, 224, 224);
+        height:100%;
+    }
+    .container ul li{
+        margin:100px 20px;
+        position: relative;
+        box-shadow: 0px 1px 10px 1px rgb(0, 0, 0);
+        background: rgb(26, 25, 25); 
+        padding:20px;
+        color:white;
+        font-size: 17px;
+    }
+    .container ul li> span{
+        content: '';
+        position: absolute;
+        top:0px;
+        left:-20px;
+        width:0px;
+        border:1px solid rgb(29, 248, 230);
+        height:100%;
+    }
+    .container ul li> span:before, .container ul li> span:after{
+        content: '';
+        position: absolute;
+        width:15px;
+        height:15px;
+        border:1px solid rgb(29, 248, 230);
+        left: -7px;
+        border-radius: 50%; 
+        background: rgb(29, 248, 230);
+    }
+    .container ul li> span:before{
+        top:-15px;
+    }
+    .container ul li> span:after{
+        top:100%;
+    }
+    .container ul li .year span{
+        position: absolute;
+        font-size: 15px;
+        left:-70px;
+        top:-20px;
+    }
+    .container ul li .year span:last-child{
+        top:100%;
+    }
+    @media screen and (max-width: 600px) {
+       
+        .container ul {
+        list-style: none;
+        padding: 0px;
+        margin-left: 40px;
+        position: relative;
+    }
+    }
+    </style>
+</head>
+<body>
+        <nav class="nav" >
+                <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                
+            <div class="">
+                <ul class="nav-ul">
+                    <li id="home"><a href="index.html"><i class="fa fa-home"></i> Home</a> </li>
+                    <li id="bottom-nav"><a href="about.html"><i class="fa fa-tasks"></i> About Me</a></li>
+					<li id="bottom-nav"><a href="mywork.html"><i class="fa fa-tasks"></i> My work</a></li>
+					<li id="home"><a href="education.html"><i class="fa fa-pencil"></i> Education</a></li>
+					<li id="home"> <a href="contact.html"><i class="fa fa-phone"></i> Contact</a>   </li>
+                </ul>
+            </div>
+            <div class="right-social">
+                <ul>
+                    <li><a href="https://github.com/sanjaybora15" style="color:white" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sanjay-borah-63871bb2/" style="color:white" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.behance.net/sanjayborah" style="color:white"  target="_blank"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100014756374522"style="color:white"target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+                    <ul>
+                            <li>
+                                    <span></span>
+                                    <div class="titile">ONLINE CERTIFICATIONS</div>
+                                    <div class="info">I. Modern React with Redux from <a href="https://www.udemy.com">udemy.com</a></div>
+                                    <div class="type"> &nbsp;&nbsp;&nbsp;Instructor: Stephen Grider</div>
+                                    <div>&nbsp;&nbsp; <a href="https://www.udemy.com/certificate/UC-7RVWXKC4/" target="_blank">See Credential</a></div><hr>
+                                    <div class="info">II. MERN Stack: Full Stack React-Redux & Node.js from <br>&nbsp;&nbsp; <a href="https://www.udemy.com">udemy.com</a></div>
+                                    <div class="type"> &nbsp;&nbsp;&nbsp;Instructor: Brad Traversy</div>
+                                    <div>&nbsp;&nbsp; <a href="https://www.udemy.com/certificate/UC-KWTGQQUD/" target="_blank" >See Credential</a></div><hr>
+                                    <div class="info">III. React Native Design Course from <a href="https://www.learncodeonline.in">learncodeonline.in</a></div>
+                                    <div class="type"> &nbsp;&nbsp;&nbsp;Instructor: Hitesh Choudhary</div>
+                                    <div>&nbsp;&nbsp; <a href="https://courses.learncodeonline.in/learn/certificate/722676-16452"target="_blank" >See Credential</a></div>
+                                    <div class="year">
+                                        <span>20. . .</span>
+                                        <span>2019</span>
+                                    </div>
+                            </li>
+                            <li>
+                                <span></span>
+                                <div class="titile">GRADUATED</div>
+                                <div class="info">East Point Group Of Institution, Bangalore-49</div>
+                                <div>Bangalore University</div>
+                                <div class="type">Computer Science -Information Technology</div>
+                                <div class="year">
+                                    <span>2018</span>
+                                    <span>2015</span>
+                                </div>
+                            </li>
+                            <li>
+                                    <span></span>
+                                    <div class="titile">AHSEC Board (12<sup>th</sup>)</div>
+                                    <div class="info">D.R COLLEGE</div>
+                                    <div>Science - PCMB</div>
+                                    <div class="type"></div>
+                                    <div class="year">
+                                        <span>2014</span>
+                                        <span>2012</span>
+                                    </div>
+                            </li>
+                            <li>
+                                    <span></span>
+                                    <div class="titile">HSLC Board (10<sup>th</sup>)</div>
+                                    <div class="info">P.R.H.H SCHOOL</div>
+                                    <div class="type"></div>
+                                    <div class="year">
+                                        <span>2012</span>
+                                        <span>0-0-0</span>
+                                    </div>
+                            </li>
+                            
+                        </ul>
+
+            
+        </div>
+        
+
+        <div class="bg-image"></div>
+        <div class="bg-color"></div>  
+        
+        <script>
+                    const hamburger = document.querySelector(".hamburger");
+                    const navLinks = document.querySelector(".nav-ul");
+                    const links = document.querySelector(".nav-links li");
+                    hamburger.addEventListener('click',() =>{
+                        navLinks.classList.toggle("open");
+                    })
+        </script>
+    </body>
+    </html>
+    
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+   
+.progress{
+    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.progress.vertical > li:first-child:after {
+  display: block;
+}
+.progress.vertical > li:last-child:after {
+  display: none;
+}
+
+.progress.vertical > li.active:after {
+  background: #b7b7b7;
+}
+
+.progress.vertical > li:after {
+  width: 2px;
+  height: 100%;
+  display: block;
+  left: -20px;
+  top: 0;
+  margin-left: 0;
+}
+
+.progress.vertical > li:before {
+  float: left;
+  display: inline-block;
+  margin-left: -30px;
+  position: absolute;
+}
+.progress.vertical.right > li {
+  margin-left: 0;
+  margin-right: 30px;
+}
+.progress.vertical.right > li:before {
+  margin-left: 0;
+  margin-right: -30px;
+  right: 0;
+}
+.progress.vertical.right > li:after {
+  right: -20px;
+  left: auto;
+}
+.progress.vertical.center > li {
+  margin-left: 0;
+  float: left;
+  width: 50%;
+  clear: right;
+  padding-right: 30px;
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+.progress.vertical.center > li > .progress-icon {
+  border: 1px solid #b7b7b7;
+  padding: 5px 10px;
+  background: #ffffff;
+}
+.progress.vertical.center > li > .progress-icon:before {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #b7b7b7;
+  content: '';
+  position: absolute;
+  right: 23px;
+  top: 15px;
+  margin-top: -10px;
+}
+.progress.vertical.center > li:before {
+  right: -11px;
+  left: auto;
+  margin-left: 0;
+}
+.progress.vertical.center > li:after {
+  right: -1px;
+  left: auto;
+}
+
+.progress.vertical.center > li:nth-child(2n) {
+  float: right;
+  clear: left;
+  padding-left: 30px;
+  margin: 0;
+  padding-right: 0;
+}
+.progress.vertical.center > li:nth-child(2n) > .progress-icon:before {
+  border-left: 0 none;
+  border-right: 8px solid #b7b7b7;
+  right: auto;
+  left: 23px;
+}
+.progress.vertical.center > li:nth-child(2n):before {
+  left: -11px;
+  right: auto;
+}   
+.progress.vertical.center > li:nth-child(2n):after {
+  left: -1px;
+  right: auto;
+}
+.progress > li {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+}
+.progress > li.active:before {
+  background: #008000;
+}
+.progress > li.active:after {
+  background: #008000;
+}
+.progress > li:before {
+  position: relative;
+  content: attr(data-step);
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto 2px;
+  line-height: 22px;
+  background: #b7b7b7;
+  border-radius: 10%;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+.progress > li:after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  display: block;
+  top: 11px;
+  left: -50%;
+  content: '';
+  background: #b7b7b7;
+  margin-left: 2px;
+  z-index: -1;
+}
+.progress > li:first-child:after {
+  display: none;
+}
+    </style>
+</head>
+<body>
+       
+        <section class="academic">
+          <ul class="progress vertical center">
+            <li data-step ="2018" class="active">
+              <div class="progress-icon "><p> BCA GRADUATED <br>BANGALORE UNIVERSITY (2015-18) <br>EAST POINT COLLEGE OF HIGHER EDUCATION <br>7.0 GPA </div>
+              </p></li>
+  
+            <li data-step ="2014">
+              <div class="progress-icon">12th - AHSEC BOARD(ASSAM) <br> SCIENCE-PCMB <br>Percentage: 50%
+              </div></li>
+  
+              <li data-step ="2012">
+                <div class="progress-icon">10th - SEBA BOARD(ASSAM) <br> Percentage: 62%
+                </div></li>
+              </ul>
+              
+            </section>
+    
+</body>
+</html> -->

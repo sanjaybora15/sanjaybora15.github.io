@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" ></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="./js/main.js"></script>
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <section>
+        
+            
+        <nav class="nav" >
+                <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                
+            <div class="">
+                <ul class="nav-ul">
+                    <li id="home"><a href="index.html"><i class="fa fa-home"></i> Home</a> </li>
+                    <li id="bottom-nav"><a href="about.html"><i class="fa fa-address-card"></i>&nbsp; About Me</a></li>
+					<li id="bottom-nav"><a href="mywork.html"><i class="fa fa-tasks"></i> My work</a></li>
+					<li id="home"><a href="education.html"><i class="fa fa-pencil"></i> Education</a></li>
+					<li id="home"> <a href="contact.html"><i class="fa fa-phone"></i> Contact</a>   </li>
+                </ul>
+            </div>
+            <!-- <div class="middle">
+                <h1>&lsaquo; NEVER GIVE UP &frasl;&rsaquo;</h1>
+            </div> -->
+            <div class="right-social">
+                <ul>
+                    <li><a href="https://github.com/sanjaybora15" style="color:white" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sanjay-borah-63871bb2/" style="color:white" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.behance.net/sanjayborah" style="color:white"  target="_blank"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100014756374522"style="color:white"target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="title">
+                <h1><span class="black">SANJAY</span> <span class="outlined">BORAH</span></h1>  
+            </div> 
+            
+            <div class="desc">
+
+                <p class="sub-title"> Full Stack Developer</p>
+                
+            </div>
+            <div class="bttn">
+                    <a href="https://github.com/sanjaybora15" target="_blank"><button >Github</button></a>
+                    <a href="https://www.linkedin.com/in/sanjay-borah-63871bb2/" target="_blank"><button>LinkedIn</button></a>
+            </div>
+            
+            
+        </div>
+        <div class="wrapper-class" style="min-height:13vh"></div>
+        
+    </section>
+    <div class="bg-image"></div>
+    <div class="bg-color"></div>  
+    
+    <script>
+                const hamburger = document.querySelector(".hamburger");
+                const navLinks = document.querySelector(".nav-ul");
+                const links = document.querySelector(".nav-links li");
+                hamburger.addEventListener('click',() =>{
+                    navLinks.classList.toggle("open");
+                })
+    </script>
+</body>
+</html>

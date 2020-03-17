@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" ></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="./js/main.js"></script>
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .portfolio-section{
+        width:70%;
+        margin: auto;
+        height: auto;
+}
+
+.section-3{
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display:flex;
+}
+.card-3{
+width:250px;
+margin-top:10%;
+border-radius: 2px;
+height: 250px;
+background: #000;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+position: relative;
+overflow: hidden;
+}
+
+.card-3 span{
+height:100%;
+width: 100%;
+border-radius: 2px;
+left:0;
+position: absolute;
+transition: .5s;
+}
+.card-3 .pro-1 span {
+    background-image: url('img/pro-1.JPG');
+}
+.card-3 .pro-2 span {
+    background-image: url('img/pro-2.JPG');
+}
+.card-3 .pro-3 span {
+    background-image: url('img/pro-3.JPG');
+}
+.card-3 .pro-4 span {
+    background-image: url('img/pro-4.JPG');
+}
+.card-3 .pro-5 span {
+    background-image: url('img/pro-5.JPG');
+}
+.card-3 span:nth-child(1){
+z-index: 10;
+width:25%;
+transition-delay: .0s;
+
+}
+.card-3 span:nth-child(2){
+z-index: 9;
+width:50%;
+transition-delay: .1s;
+
+}
+.card-3 span:nth-child(3){
+z-index: 8;
+width:75%;
+transition-delay: .2s;
+
+}
+.card-3 span:nth-child(4){
+z-index: 7;
+width:100%;
+transition-delay: .4s;
+
+}
+.card-3:hover span{
+transform: translateY(-100%);
+transition: .4s;  
+}
+.card-3:hover span:nth-child(1){
+transition-delay: .3s;  
+}
+.card-3:hover span:nth-child(2){
+transition-delay: .2s;  
+}
+.card-3:hover span:nth-child(3){
+transition-delay: .1s;  
+}
+.card-3:hover span:nth-child(4){
+transition-delay: .0s;  
+}
+.card-content{
+text-align: center;
+color:#fff;
+width: 100%;
+height: 100%;
+padding: 10px;
+box-sizing: border-box; 
+transition:1s;
+transform: translateY(100%)  
+}
+.card-3:hover .card-content{
+transform: translateY(0%)
+}
+.bttn {
+    margin-top:-5px
+}
+
+    </style>
+</head>
+<body>
+        <nav class="nav" >
+                <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                
+            <div class="">
+                <ul class="nav-ul">
+                    <li id="home"><a href="index.html"><i class="fa fa-home"></i> Home</a> </li>
+                    <li id="bottom-nav"><a href="about.html"><i class="fa fa-address-card"></i>&nbsp; About Me</a></li>
+					<li id="bottom-nav"><a href="mywork.html"><i class="fa fa-tasks"></i> My work</a></li>
+					<li id="home"><a href="education.html"><i class="fa fa-pencil"></i> Education</a></li>
+					<li id="home"> <a href="contact.html"><i class="fa fa-phone"></i> Contact</a>   </li>
+                </ul>
+            </div>
+            <div class="right-social">
+                <ul>
+                    <li><a href="https://github.com/sanjaybora15" style="color:white" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sanjay-borah-63871bb2/" style="color:white" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.behance.net/sanjayborah" style="color:white"  target="_blank"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100014756374522"style="color:white"target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+        <section class="portfolio-section">
+                
+                <div class="section-3">
+                       
+                    <div class="card-3">
+                            <div class="pro-1"><span></span><span></span><span></span><span></span></div>
+                            <div class="card-content">
+                                <h1>pro connect</h1>
+                                <p>nodejs-express.js, reactjs-redux, mongodb application allows you to create profiles, write and see post and get help from the other professionals.</p>
+                                <div class="bttn">
+                                        <a href="http://proconnectors.herokuapp.com/" target="_blank"><button >See Demo</button></a>
+                                    </div>
+                            </div>
+                            
+                    </div>
+                    <div class="card-3">
+                            <div class="pro-2"><span></span><span></span><span></span><span></span></div>
+                            <div class="card-content">
+                                <h1>AZ- fashion</h1>
+                                <p>Php MySQL html css javascript client-server application allows you to buy fashion goods online. Can track the delivery status </p>
+                                <div class="bttn">
+                                    <a href="http://azstore15.000webhostapp.com/" target="_blank"><button >See Demo</button></a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card-3">
+                            <div class="pro-3"><span></span><span></span><span></span><span></span></div>
+                            <div class="card-content">
+                                <h1>My Portfolio</h1>
+                                <p>HTML CSS JAVASCRIPT TEMPLATE</p>
+                                <div class="bttn">
+                                        <a href="http://sanjaybora15.github.io" target="_blank"><button >See Demo</button></a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card-3">
+                            <div class="pro-4"><span></span><span></span><span></span><span></span></div>
+                            <div class="card-content">
+                                <h1>Pixel Perfect Template</h1>
+                                <p>Html css js one page template.</p>
+                                <div class="bttn">
+                                    <a href="#" target="_blank"><button >See Demo</button></a>
+                                </div>
+                            </div>
+                           
+                    </div>
+                    <div class="card-3">
+                            <div class="pro-5"><span></span><span></span><span></span><span></span></div>
+                            <div class="card-content">
+                                <h1>Reader Template</h1>
+                                <p>HTML CSS Bootstrap javascript</p>
+                                <div class="bttn">
+                                    <a href="https://sanjaybora15.github.io/html-css-bootstrap-reader" target="_blank"><button >See Demo</button></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        
+
+        <div class="bg-image"></div>
+        <div class="bg-color"></div>  
+        
+        <script>
+                    const hamburger = document.querySelector(".hamburger");
+                    const navLinks = document.querySelector(".nav-ul");
+                    const links = document.querySelector(".nav-links li");
+                    hamburger.addEventListener('click',() =>{
+                        navLinks.classList.toggle("open");
+                    })
+        </script>
+    </body>
+    </html>
+    
+
+
+
+
+
+
